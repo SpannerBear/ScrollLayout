@@ -1,4 +1,8 @@
 # ScrollLayout
+
+## 分支修改择要
+解决自定义属性名称冲突
+
 ## Abstract 摘要
 在ScrollView或者ListView里面使用ViewPager.支持手势上拉滑出,中途停顿,下滑退出页面,类似百度地图内场景抽屉拖拽效果效果
 
@@ -18,7 +22,7 @@
 #### Gradle 配置
 ```
 dependencies {
-    compile 'com.yinglan.scrolllayout:scrolllayout:1.0.2'
+    compile 'com.github.SpannerBear:ScrollLayout:1.0.3'
 }
 ```
 
