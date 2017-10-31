@@ -153,26 +153,26 @@ public class ScrollLayout extends FrameLayout {
     private void initFromAttributes(Context context, AttributeSet attrs) {
         TypedArray a = context.obtainStyledAttributes(attrs,
                 R.styleable.ScrollLayout);
-        if (a.hasValue(R.styleable.ScrollLayout_maxOffset)) {
-            int maxset = a.getDimensionPixelOffset(R.styleable.ScrollLayout_maxOffset, maxOffset);
+        if (a.hasValue(R.styleable.ScrollLayout_scr_maxOffset)) {
+            int maxset = a.getDimensionPixelOffset(R.styleable.ScrollLayout_scr_maxOffset, maxOffset);
             if (maxset != getScreenHeight()) {
                 maxOffset = getScreenHeight() - maxset;
             }
         }
-        if (a.hasValue(R.styleable.ScrollLayout_minOffset))
-            minOffset = a.getDimensionPixelOffset(R.styleable.ScrollLayout_minOffset, minOffset);
-        if (a.hasValue(R.styleable.ScrollLayout_exitOffset)) {
-            int exitset = a.getDimensionPixelOffset(R.styleable.ScrollLayout_exitOffset, getScreenHeight());
+        if (a.hasValue(R.styleable.ScrollLayout_scr_minOffset))
+            minOffset = a.getDimensionPixelOffset(R.styleable.ScrollLayout_scr_minOffset, minOffset);
+        if (a.hasValue(R.styleable.ScrollLayout_scr_exitOffset)) {
+            int exitset = a.getDimensionPixelOffset(R.styleable.ScrollLayout_scr_exitOffset, getScreenHeight());
             if (exitset != getScreenHeight()) {
                 exitOffset = getScreenHeight() - exitset;
             }
         }
-        if (a.hasValue(R.styleable.ScrollLayout_allowHorizontalScroll))
-            isAllowHorizontalScroll = a.getBoolean(R.styleable.ScrollLayout_allowHorizontalScroll, true);
-        if (a.hasValue(R.styleable.ScrollLayout_isSupportExit))
-            isSupportExit = a.getBoolean(R.styleable.ScrollLayout_isSupportExit, true);
-        if (a.hasValue(R.styleable.ScrollLayout_mode)) {
-            int mode = a.getInteger(R.styleable.ScrollLayout_mode, 0);
+        if (a.hasValue(R.styleable.ScrollLayout_scr_allowHorizontalScroll))
+            isAllowHorizontalScroll = a.getBoolean(R.styleable.ScrollLayout_scr_allowHorizontalScroll, true);
+        if (a.hasValue(R.styleable.ScrollLayout_scr_isSupportExit))
+            isSupportExit = a.getBoolean(R.styleable.ScrollLayout_scr_isSupportExit, true);
+        if (a.hasValue(R.styleable.ScrollLayout_scr_mode)) {
+            int mode = a.getInteger(R.styleable.ScrollLayout_scr_mode, 0);
             switch (mode) {
                 case 0x0:
                     setToOpen();

@@ -3,21 +3,21 @@
 
     <declare-styleable name="ScrollLayout">
 
-        <attr name="minOffset" format="dimension" />
+        <attr name="scr_minOffset" format="dimension" />
 
-        <attr name="maxOffset" format="dimension" />
+        <attr name="scr_maxOffset" format="dimension" />
 
-        <attr name="exitOffset" format="dimension" />
+        <attr name="scr_exitOffset" format="dimension" />
 
-        <attr name="mode">
+        <attr name="scr_mode">
             <flag name="open" value="0x0" />
             <flag name="close" value="0x1" />
             <flag name="exit" value="0x2" />
         </attr>
 
-        <attr name="allowHorizontalScroll" format="boolean"/>
+        <attr name="scr_allowHorizontalScroll" format="boolean"/>
 
-        <attr name="isSupportExit" format="boolean"/>
+        <attr name="scr_isSupportExit" format="boolean"/>
 
     </declare-styleable>
 
