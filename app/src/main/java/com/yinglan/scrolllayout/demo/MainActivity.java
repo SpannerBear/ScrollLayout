@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 } else if (precent < 0) {
                     precent = 0;
                 }
+                
                 mScrollLayout.getBackground().setAlpha(255 - (int) precent);
             }
             if (text_foot.getVisibility() == View.VISIBLE)
