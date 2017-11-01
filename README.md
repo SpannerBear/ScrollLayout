@@ -22,7 +22,7 @@
 #### Gradle 配置
 ```
 dependencies {
-    compile 'com.github.SpannerBear:ScrollLayout:1.0.3'
+    compile 'com.github.SpannerBear:ScrollLayout:1.0.5'
 }
 ```
 
